@@ -45,15 +45,15 @@ request.get('https://en.wikipedia.org/wiki/List_of_countries_by_median_age', fun
     if (medians[code].median_age >= 40) {
       medians[code].fillKey = '40+'
     } else if (medians[code].median_age >= 35) {
-      medians[code].fillKey = '35+'
+      medians[code].fillKey = '35-40'
     } else if (medians[code].median_age >= 30) {
-      medians[code].fillKey = '30+'
+      medians[code].fillKey = '30-35'
     } else if (medians[code].median_age >= 25) {
-      medians[code].fillKey = '25+'
+      medians[code].fillKey = '25-30'
     } else if (medians[code].median_age >= 20) {
-      medians[code].fillKey = '20+'
+      medians[code].fillKey = '20-25'
     } else if (medians[code].median_age >= 14) {
-      medians[code].fillKey = '14+'
+      medians[code].fillKey = '14-20'
     }
   }
 

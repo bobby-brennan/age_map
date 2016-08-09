@@ -2,20 +2,54 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="/datamaps.world.min.js"></script>
 <script src="/countries.js"></script>
-<div id="container" style="position: relative; width: 1000px; height: 800px;"></div>
+<style>
+#container {
+  font-family: sans-serif;
+  position: relative;
+  font-size: 14px;
+  padding: 50px;
+}
+#legend {
+  position: absolute;
+  bottom: 40px;
+}
+.legend-color, .legend-label {
+  margin-bottom: 2px;
+}
+.legend-color {
+  height: 20px;
+  width: 50px;
+}
+.legend-label {
+  padding-bottom: 4px;
+}
+</style>
+<div id="container" style="position: relative; width: 1000px; height: 600px;">
+  <div id="legend"><h2>Years</h2></div>
+</div>
 <script>
+    var fills = {
+      "40+": "#1F3A93",
+      "35-40": "#4F3ABB",
+      "30-35": "#7F3ACC",
+      "25-30": "#AF3ADD",
+      "20-25": "#DF3AEE",
+      "14-20": "#FF3AFF",
+      "defaultFill": "#333",
+    }
     var map = new Datamap({
         element: document.getElementById('container'),
         data: medianAges,
-        fills: {
-          "40+": "#1F3A93",
-          "35+": "#4F3ABB",
-          "30+": "#7F3ACC",
-          "25+": "#AF3ADD",
-          "20+": "#DF3AEE",
-          "14+": "#FF3AFF",
-          "defaultFill": "#333",
-        }
+        fills: fills,
     });
+    var legend = document.getElementById('legend');
+    for (var fill in fills) {
+      var label = fill === 'defaultFill' ? 'No Data' : fill;
+      legend.innerHTML +=
+          '<div class="legend-row">' +
+          '  <div class="legend-color" style="background-color: ' + fills[fill] + '"></div>' +
+          '  <div class="legend-label">' + label + '</div>' +
+          '</div>';
+    }
 
 </script>
