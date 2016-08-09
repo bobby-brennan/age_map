@@ -1,200 +1,830 @@
 var medianAges = {
-  "undefined": 20,
-  "AF": 18,
-  "AL": 31,
-  "DZ": 27,
-  "AD": 42,
-  "AO": 17,
-  "AI": 34,
-  "AG": 31,
-  "AR": 31,
-  "AM": 33,
-  "AW": 38,
-  "AU": 38,
-  "AT": 44,
-  "AZ": 30,
-  "BS": 31,
-  "BH": 31,
-  "BD": 24,
-  "BB": 37,
-  "BY": 39,
-  "BE": 43,
-  "BZ": 21,
-  "BJ": 17,
-  "BM": 42,
-  "BT": 26,
-  "BA": 40,
-  "BW": 22,
-  "BR": 30,
-  "BG": 42,
-  "BF": 17,
-  "BI": 17,
-  "KH": 24,
-  "CM": 18,
-  "CA": 41,
-  "CV": 24,
-  "KY": 39,
-  "CF": 19,
-  "TD": 17,
-  "CL": 33,
-  "CN": 36,
-  "CO": 28,
-  "KM": 19,
-  "CG": 19,
-  "CK": 34,
-  "CR": 30,
-  "HR": 42,
-  "CU": 39,
-  "CW": 36,
-  "CY": 35,
-  "CZ": 40,
-  "DK": 41,
-  "DJ": 22,
-  "DM": 32,
-  "DO": 27,
-  "EC": 26,
-  "EG": 25,
-  "SV": 25,
-  "GQ": 19,
-  "ER": 19,
-  "EE": 41,
-  "ET": 17,
-  "FO": 37,
-  "FJ": 27,
-  "FI": 43,
-  "FR": 40,
-  "PF": 30,
-  "GA": 18,
-  "GM": 20,
-  "GE": 37,
-  "DE": 46,
-  "GH": 20,
-  "GR": 43,
-  "GL": 33,
-  "GD": 29,
-  "GU": 29,
-  "GT": 21,
-  "GN": 18,
-  "GW": 19,
-  "GY": 25,
-  "HT": 22,
-  "HN": 21,
-  "HK": 43,
-  "HU": 41,
-  "IS": 36,
-  "IN": 27,
-  "ID": 29,
-  "IQ": 21,
-  "IE": 35,
-  "IM": 43,
-  "IL": 29,
-  "IT": 44,
-  "JM": 24,
-  "JP": 46,
-  "JO": 21,
-  "KZ": 29,
-  "KE": 19,
-  "KI": 23,
-  "KW": 28,
-  "KG": 25,
-  "LV": 41,
-  "LB": 29,
-  "LS": 23,
-  "LR": 17,
-  "LY": 27,
-  "LI": 42,
-  "LT": 41,
-  "LU": 39,
-  "MG": 19,
-  "MW": 16,
-  "MY": 27,
-  "MV": 27,
-  "ML": 16,
-  "MT": 40,
-  "MH": 22,
-  "MR": 19,
-  "MU": 33,
-  "YT": 17,
-  "MX": 27,
-  "MC": 51,
-  "MN": 27,
-  "ME": 39,
-  "MS": 31,
-  "MA": 28,
-  "MZ": 16,
-  "NA": 22,
-  "NR": 25,
-  "NP": 22,
-  "NL": 42,
-  "NC": 31,
-  "NZ": 37,
-  "NI": 24,
-  "NE": 15,
-  "NG": 18,
-  "MP": 31,
-  "NO": 39,
-  "OM": 24,
-  "PK": 22,
-  "PW": 33,
-  "PA": 28,
-  "PG": 22,
-  "PY": 26,
-  "PE": 27,
-  "PH": 23,
-  "PL": 39,
-  "PT": 41,
-  "PR": 38,
-  "QA": 32,
-  "RO": 39,
-  "RW": 18,
-  "BL": 42,
-  "KN": 33,
-  "LC": 32,
-  "PM": 44,
-  "VC": 31,
-  "WS": 23,
-  "AS": 28,
-  "SM": 43,
-  "SA": 26,
-  "SN": 18,
-  "RS": 41,
-  "SC": 33,
-  "SL": 19,
-  "SG": 33,
-  "SK": 39,
-  "SI": 43,
-  "SB": 21,
-  "SO": 17,
-  "ZA": 25,
-  "SS": 16,
-  "ES": 41,
-  "LK": 31,
-  "SD": 19,
-  "SR": 28,
-  "SZ": 21,
-  "SE": 41,
-  "CH": 42,
-  "TJ": 23,
-  "TH": 36,
-  "TL": 18,
-  "TG": 19,
-  "TO": 22,
-  "TT": 34,
-  "TN": 31,
-  "TR": 29,
-  "TM": 26,
-  "TC": 31,
-  "TV": 24,
-  "UG": 15,
-  "UA": 40,
-  "AE": 30,
-  "GB": 40,
-  "US": 37,
-  "UY": 34,
-  "UZ": 27,
-  "VU": 21,
-  "WF": 30,
-  "YE": 18,
-  "ZM": 16,
-  "ZW": 20
+  "AFG": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "ALB": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "DZA": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "AND": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "AGO": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "AIA": {
+    "median_age": 34,
+    "fillKey": "30+"
+  },
+  "ANT": {
+    "median_age": 34,
+    "fillKey": "30+"
+  },
+  "ARG": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "ARM": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "ABW": {
+    "median_age": 38,
+    "fillKey": "35+"
+  },
+  "AUS": {
+    "median_age": 38,
+    "fillKey": "35+"
+  },
+  "AUT": {
+    "median_age": 44,
+    "fillKey": "40+"
+  },
+  "AZE": {
+    "median_age": 30,
+    "fillKey": "30+"
+  },
+  "BHS": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "BHR": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "BGD": {
+    "median_age": 24,
+    "fillKey": "20+"
+  },
+  "BRB": {
+    "median_age": 37,
+    "fillKey": "35+"
+  },
+  "BLR": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "BEL": {
+    "median_age": 43,
+    "fillKey": "40+"
+  },
+  "BLZ": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "BEN": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "BMU": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "BTN": {
+    "median_age": 26,
+    "fillKey": "25+"
+  },
+  "BOL": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "BIH": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "BWA": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "BRA": {
+    "median_age": 30,
+    "fillKey": "30+"
+  },
+  "BRN": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "BGR": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "BFA": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "BDI": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "KHM": {
+    "median_age": 24,
+    "fillKey": "20+"
+  },
+  "CMR": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "CAN": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "CYM": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "CAF": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "TCD": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "CHL": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "CHN": {
+    "median_age": 36,
+    "fillKey": "35+"
+  },
+  "COL": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "COM": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "COD": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "COK": {
+    "median_age": 34,
+    "fillKey": "30+"
+  },
+  "CRI": {
+    "median_age": 30,
+    "fillKey": "30+"
+  },
+  "HRV": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "CUB": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "CYP": {
+    "median_age": 35,
+    "fillKey": "35+"
+  },
+  "CZE": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "DNK": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "DJI": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "DMA": {
+    "median_age": 32,
+    "fillKey": "30+"
+  },
+  "DOM": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "ECU": {
+    "median_age": 26,
+    "fillKey": "25+"
+  },
+  "EGY": {
+    "median_age": 25,
+    "fillKey": "25+"
+  },
+  "SLV": {
+    "median_age": 25,
+    "fillKey": "25+"
+  },
+  "GNQ": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "ERI": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "EST": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "ETH": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "FRO": {
+    "median_age": 37,
+    "fillKey": "35+"
+  },
+  "FJI": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "FIN": {
+    "median_age": 43,
+    "fillKey": "40+"
+  },
+  "FRA": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "PYF": {
+    "median_age": 30,
+    "fillKey": "30+"
+  },
+  "GAB": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "GMB": {
+    "median_age": 20,
+    "fillKey": "20+"
+  },
+  "GEO": {
+    "median_age": 37,
+    "fillKey": "35+"
+  },
+  "DEU": {
+    "median_age": 46,
+    "fillKey": "40+"
+  },
+  "GHA": {
+    "median_age": 20,
+    "fillKey": "20+"
+  },
+  "GRC": {
+    "median_age": 43,
+    "fillKey": "40+"
+  },
+  "GRL": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "GRD": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "GUM": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "GTM": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "GIN": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "GUY": {
+    "median_age": 25,
+    "fillKey": "25+"
+  },
+  "HTI": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "HND": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "HKG": {
+    "median_age": 43,
+    "fillKey": "40+"
+  },
+  "HUN": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "ISL": {
+    "median_age": 36,
+    "fillKey": "35+"
+  },
+  "IND": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "IDN": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "IRN": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "IRQ": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "IRL": {
+    "median_age": 35,
+    "fillKey": "35+"
+  },
+  "ISR": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "ITA": {
+    "median_age": 44,
+    "fillKey": "40+"
+  },
+  "JAM": {
+    "median_age": 24,
+    "fillKey": "20+"
+  },
+  "JPN": {
+    "median_age": 46,
+    "fillKey": "40+"
+  },
+  "JOR": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "KAZ": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "KEN": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "KIR": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "PRK": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "KOR": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "KWT": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "KGZ": {
+    "median_age": 25,
+    "fillKey": "25+"
+  },
+  "LVA": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "LBN": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "LSO": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "LBR": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "LBY": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "LIE": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "LTU": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "LUX": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "MKD": {
+    "median_age": 36,
+    "fillKey": "35+"
+  },
+  "MDG": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "MWI": {
+    "median_age": 16,
+    "fillKey": "14+"
+  },
+  "MYS": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "MDV": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "MLI": {
+    "median_age": 16,
+    "fillKey": "14+"
+  },
+  "MLT": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "MHL": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "MRT": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "MUS": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "MYT": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "MEX": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "MDA": {
+    "median_age": 35,
+    "fillKey": "35+"
+  },
+  "MCO": {
+    "median_age": 51,
+    "fillKey": "40+"
+  },
+  "MNG": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "MNE": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "MSR": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "MAR": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "MOZ": {
+    "median_age": 16,
+    "fillKey": "14+"
+  },
+  "BUR": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "NAM": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "NRU": {
+    "median_age": 25,
+    "fillKey": "25+"
+  },
+  "NPL": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "NLD": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "NCL": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "NZL": {
+    "median_age": 37,
+    "fillKey": "35+"
+  },
+  "NIC": {
+    "median_age": 24,
+    "fillKey": "20+"
+  },
+  "NER": {
+    "median_age": 15,
+    "fillKey": "14+"
+  },
+  "NGA": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "MNP": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "NOR": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "OMN": {
+    "median_age": 24,
+    "fillKey": "20+"
+  },
+  "PAK": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "PLW": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "PSE": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "PAN": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "PNG": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "PRY": {
+    "median_age": 26,
+    "fillKey": "25+"
+  },
+  "PER": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "PHL": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "POL": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "PRT": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "PRI": {
+    "median_age": 38,
+    "fillKey": "35+"
+  },
+  "QAT": {
+    "median_age": 32,
+    "fillKey": "30+"
+  },
+  "ROU": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "RUS": {
+    "median_age": 38,
+    "fillKey": "35+"
+  },
+  "RWA": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "BLM": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "SHN": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "LCA": {
+    "median_age": 32,
+    "fillKey": "30+"
+  },
+  "MAF": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "WSM": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "ASM": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "SMR": {
+    "median_age": 43,
+    "fillKey": "40+"
+  },
+  "SAU": {
+    "median_age": 26,
+    "fillKey": "25+"
+  },
+  "SEN": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "SRB": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "SYC": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "SLE": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "SGP": {
+    "median_age": 33,
+    "fillKey": "30+"
+  },
+  "SXM": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "SVK": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "SVN": {
+    "median_age": 43,
+    "fillKey": "40+"
+  },
+  "SLB": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "SOM": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "ZAF": {
+    "median_age": 25,
+    "fillKey": "25+"
+  },
+  "SSD": {
+    "median_age": 16,
+    "fillKey": "14+"
+  },
+  "ESP": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "LKA": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "SDN": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "SUR": {
+    "median_age": 28,
+    "fillKey": "25+"
+  },
+  "SWZ": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "SWE": {
+    "median_age": 41,
+    "fillKey": "40+"
+  },
+  "CHE": {
+    "median_age": 42,
+    "fillKey": "40+"
+  },
+  "SYR": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "TWN": {
+    "median_age": 39,
+    "fillKey": "35+"
+  },
+  "TJK": {
+    "median_age": 23,
+    "fillKey": "20+"
+  },
+  "TZA": {
+    "median_age": 17,
+    "fillKey": "14+"
+  },
+  "THA": {
+    "median_age": 36,
+    "fillKey": "35+"
+  },
+  "TLS": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "TGO": {
+    "median_age": 19,
+    "fillKey": "14+"
+  },
+  "TON": {
+    "median_age": 22,
+    "fillKey": "20+"
+  },
+  "TUN": {
+    "median_age": 31,
+    "fillKey": "30+"
+  },
+  "TUR": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "TKM": {
+    "median_age": 26,
+    "fillKey": "25+"
+  },
+  "TUV": {
+    "median_age": 24,
+    "fillKey": "20+"
+  },
+  "UGA": {
+    "median_age": 15,
+    "fillKey": "14+"
+  },
+  "UKR": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "ARE": {
+    "median_age": 30,
+    "fillKey": "30+"
+  },
+  "GBR": {
+    "median_age": 40,
+    "fillKey": "40+"
+  },
+  "USA": {
+    "median_age": 37,
+    "fillKey": "35+"
+  },
+  "URY": {
+    "median_age": 34,
+    "fillKey": "30+"
+  },
+  "UZB": {
+    "median_age": 27,
+    "fillKey": "25+"
+  },
+  "VUT": {
+    "median_age": 21,
+    "fillKey": "20+"
+  },
+  "VEN": {
+    "median_age": 26,
+    "fillKey": "25+"
+  },
+  "VDR": {
+    "median_age": 29,
+    "fillKey": "25+"
+  },
+  "VGB": {
+    "median_age": 35,
+    "fillKey": "35+"
+  },
+  "YEM": {
+    "median_age": 18,
+    "fillKey": "14+"
+  },
+  "ZMB": {
+    "median_age": 16,
+    "fillKey": "14+"
+  },
+  "ZWE": {
+    "median_age": 20,
+    "fillKey": "20+"
+  }
 }
