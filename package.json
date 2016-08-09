@@ -5,7 +5,7 @@
   "main": "countries.js",
   "dependencies": {
     "cheerio": "^0.20.0",
-    "country-list": "0.0.3",
+    "country-data": "0.0.26",
     "request": "^2.74.0"
   },
   "devDependencies": {},
