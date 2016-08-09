@@ -175,6 +175,10 @@ var medianAges = {
     "median_age": 30,
     "fillKey": "30+"
   },
+  "CIV": {
+    "median_age": 20,
+    "fillKey": "20+"
+  },
   "HRV": {
     "median_age": 42,
     "fillKey": "40+"
@@ -394,6 +398,10 @@ var medianAges = {
   "KGZ": {
     "median_age": 25,
     "fillKey": "25+"
+  },
+  "LAO": {
+    "median_age": 22,
+    "fillKey": "20+"
   },
   "LVA": {
     "median_age": 41,

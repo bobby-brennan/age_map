@@ -15,17 +15,8 @@ var nameLookup = {
   "Palestine/Gaza Strip": "Palestinian Territory, Occupied",
   "Palestine/West Bank": "Palestinian Territory, Occupied",
   "Vietnam": "Viet-Nam, Democratic Republic of",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
+  "Laos": "Lao People's Democratic Republic",
+  "Ivory Coast": "Côte d'Ivoire",
 }
 
 var medians = {}
